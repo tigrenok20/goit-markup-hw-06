@@ -533,12 +533,16 @@ img {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .feature-title {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .feature-title {
     font-weight: 500;
     font-size: 20px;
-
-    /* line-height: 24px; */
     line-height: 1.2;
   }
 }
@@ -688,6 +692,12 @@ img {
   row-gap: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  .our-portfolio-list {
+    row-gap: 72px;
+  }
+}
+
 .portfolio-item {
   width: 100%;
   box-shadow:
@@ -799,6 +809,13 @@ img {
 
 .footer-logo {
   margin-bottom: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    text-align: left;
+  }
 }
 
 .footer-logo .logo-part {
@@ -810,12 +827,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-}
-
-.page-footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
@@ -841,15 +852,16 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
   .footer-container {
-    max-width: 552px;
-    padding: 0 108px;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 24px;
+    max-width: 552px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .footer-container {
+    max-width: 1158px;
     flex-direction: row;
     gap: normal;
   }
@@ -870,18 +882,10 @@ img {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) {
   .footer-social {
+    display: block;
     max-width: 208px;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .footer-social {
-    gap: auto;
-    width: auto;
-    align-items: start;
   }
 }
 
@@ -934,12 +938,23 @@ img {
   color: #fff;
 }
 
-.footer-form {
+.footer-form-controls {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form-controls {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.footer-form {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
@@ -965,7 +980,7 @@ img {
   position: relative;
 }
 
-.footer-email-label {
+.footer-form-title {
   display: block;
   font-weight: 500;
   font-size: 16px;
@@ -973,6 +988,13 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form-title {
+    text-align: left;
+  }
 }
 
 .form-email-input {
