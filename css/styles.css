@@ -319,6 +319,10 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu-phone {
+  color: #4d5ae5;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -458,6 +462,7 @@ img {
   margin: 0 auto;
   max-width: 216px;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
@@ -614,6 +619,10 @@ img {
   .our-team-container {
     max-width: 552px;
     padding: 0;
+  }
+
+  .our-team .card-list {
+    row-gap: 64px;
   }
 }
 
@@ -859,6 +868,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 72px;
     max-width: 552px;
   }
 }
@@ -867,7 +877,7 @@ img {
   .footer-container {
     max-width: 1158px;
     flex-direction: row;
-    gap: normal;
+    gap: 0;
   }
 }
 
