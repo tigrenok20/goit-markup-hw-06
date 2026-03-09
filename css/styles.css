@@ -90,7 +90,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  width: 100%;
 }
 
 .footer-social .social-icons-list {
@@ -747,7 +746,7 @@ img {
   border-top: none;
 }
 
-@media screen and(min-width:1158px) {
+@media screen and (min-width: 1158px) {
   .portfolio-info {
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
@@ -887,6 +886,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .social-title {
+    text-align: left;
+  }
 }
 
 .footer-social {
