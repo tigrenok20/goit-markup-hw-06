@@ -400,25 +400,29 @@ img {
 
 .mobile-contacts {
   font-style: normal;
+  margin-bottom: 48px;
 }
 
 .mobile-menu .contacts-list {
   flex-direction: column;
-  margin-bottom: 24px;
-  gap: 0;
+  gap: 24px;
 }
 
 .mobile-menu .contacts-link {
   padding: 0;
-  margin-bottom: 24px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  gap: 24px;
 }
 
 .mobile-menu .contacts-link:hover,
 .mobile-menu .contacts-link:focus {
   color: #4d5ae5;
+}
+
+.mobile-menu .social-icons-list {
+  gap: 40px;
 }
 
 /* #endregion modal menu */
